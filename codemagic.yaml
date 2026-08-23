@@ -4,6 +4,7 @@ workflows:
     environment:
       flutter: stable
     scripts:
+      - flutter create . --platforms=android --org com.sportslive --project-name sports_streaming_app
       - flutter pub get
       - flutter analyze
       - flutter build apk --debug
